@@ -1,0 +1,22 @@
+#!/bin/bash
+tmux new-session -d
+tmux rename-window 'General'
+###############################
+tmux new-window -d
+tmux next-window
+tmux rename-window 'Workspace'
+###############################
+tmux new-window -d
+tmux next-window
+tmux rename-window 'SSH'
+tmux split-window -h
+tmux split-window -v
+tmux select-pane -L
+tmux split-window -v
+##############################
+tmux new-window -d
+tmux next-window
+tmux rename-window 'Etc'
+##############################
+tmux next-window
+tmux attach -t 0
