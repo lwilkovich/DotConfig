@@ -11,3 +11,5 @@ sudo mkdir /prod
 sudo mkdir /prod/bin
 echo Copying Tmux Start Script
 sudo cp ./tmux/TmuxStartScript /prod/bin/
+source ~/.bashrc
+
