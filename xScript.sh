@@ -1,17 +1,17 @@
 #!/bin/bash
 echo Copying Tmux Config
-cp ./tmux/.tmux.conf ~/
+cp ./.tmux.conf ~/
 echo Copying Vimrc
-cp ./vim/.vimrc ~/
+cp ./.vimrc ~/
 echo Copying Bashrc
-cp ./bash/.bashrc ~/
+cp ./.bashrc ~/
 echo Copying Amazon zsh
-cp ./zsh/.zshrc ~/
+cp ./.zshrc ~/
 
 echo Making /prod/bin
 sudo mkdir /prod
 sudo mkdir /prod/bin
 echo Copying Tmux Start Script
-sudo cp ./tmux/TmuxStartScript /prod/bin/
+sudo cp ./TmuxStartScript /prod/bin/
 source ~/.zshrc
 
